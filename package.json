@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "name": "reborn",
   "version": "0.0.1",
   "description": "This app will change your life",
@@ -8,6 +11,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.11.14"
   }
 }

@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face{
+    font-family: 'Kenia';
+    src: url(../fonts/Kenia-Regular.ttf);
+}
+:root{
+    --red-color:#fc1f1f;
+    --blue-color:#2e89d3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato';
+}
+a{
+    text-decoration: none;
+    color: #494747;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+}

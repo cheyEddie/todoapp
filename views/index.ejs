@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo"><a href="#">Reborn</a></h1>
+        <button class="new-todo"><i class="fa fa-plus" style="margin-right: 5px;"></i><span>New</span></button>
+    </nav>
+    <div class="todo-list">
+        <h2>Liste des choses à faire</h2>
+        <ul class="to-dos">
+        </ul>
+    </div>
+    <div id="todo-modal" class="todo-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Todo info</h3>
+                <span class="close"> 
+                    <i class="fa fa-close"></i>
+                </span>
+            </div>
+            <div class="modal-body">
+                <span class="todo-id"></span>
+                <p>Task: <span class="task"></span></p>
+                <p>Description: <span class="description"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button class="edit-todo">Modifier</button>
+                <button class="delete-todo">Supprimer</button>
+            </div>        
+        </div>
+    </div>
+    <div id="edit-modal" class="edit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="cancel"><i class="fa fa-close"></i></span>
+                <h2>Cancel edit</h2>
+            </div>
+            <form action="">
+                <div class="modal-body">
+                    <input type="hidden" name="id" class="input-id">
+                    <div class="form-group">
+                        <label for="task">Task:</label>
+                        <input type="text" id="task" name="task" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button class="save-edit" type="submit"><i class="fa fa-save"></i> Enregistrer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="add-modal" class="add-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="cancel-add"><i class="fa fa-close"></i></span>
+                <h2>Cancel Add</h2>
+            </div>
+            <form>   
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="task-add">Task:</label>
+                        <input type="text" id="task-add" name="task" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="description-add">Description:</label>
+                        <textarea id="description-add" name="description" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button class="add" type="submit"><i class="fa fa-plus"></i> Ajouter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/jquery.min.js"></script>    
+    <script src="/js/main.js"></script>
+</body>
+</html>

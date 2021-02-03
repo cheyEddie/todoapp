@@ -1,0 +1,24 @@
+nav{
+    min-height: 10vh;
+    background-color: var(--red-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kenia';
+    .logo{
+        a{
+            color: #fff;
+            margin-left: 5rem;
+        }
+    }
+    button{
+        margin-right: 5rem;
+        color: var(--red-color);
+        background: #fff;
+        transition: background-color .5s ease;
+        font-family: 'Kenia';
+    }
+    button:hover{
+        background-color: #f3efef;
+    }
+}
